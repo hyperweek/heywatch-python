@@ -64,7 +64,7 @@ class API:
 	def request(self, resource, method='GET', **args):
 		params = {'headers':self.headers}
 		params.update(args)
-		print params
+
 		response, content = self.cli.request(self.url + resource, method, **params)
 		
 		if(re.search('^4|5', response['status'])):

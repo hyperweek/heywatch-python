@@ -13,7 +13,7 @@ For more information:
 
 ## Install ##
 
-  sudo python setup.py install
+	sudo python setup.py install
 
 ## Usage ##
 
@@ -132,6 +132,6 @@ For more information:
 
 	hw.create('download', url='not_a_valid_url')
 	
-	➔ lib.heywatch.BadRequest: '400 {"message":"Url is invalid"}'
+	➔ heywatch.api.BadRequest: '400 {"message":"Url is invalid"}'
 
 Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
