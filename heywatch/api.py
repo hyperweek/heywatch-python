@@ -11,7 +11,7 @@ class BadRequest(Exception):
 
 class API:		
 	def __init__(self, username, password):
-		self.url = 'http://heywatch.com'
+		self.url = 'https://heywatch.com'
 		self.cli = httplib2.Http()
 		self.cli.add_credentials(username, password)
 		
