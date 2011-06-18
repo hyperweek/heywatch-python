@@ -2,7 +2,7 @@
 
 HeyWatch is a Video Encoding Web Service.
 
-For a CLI, look at the ruby version: http://github.com/particles/heywatch
+For a CLI, look at the ruby version: http://github.com/particles/heywatch-ruby
 
 For more information:
 
@@ -13,7 +13,7 @@ For more information:
 
 ## Install ##
 
-	sudo python setup.py install
+	sudo easy_install heywatch
 
 ## Usage ##
 

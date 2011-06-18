@@ -2,16 +2,26 @@ from setuptools import setup
 import sys, os
 
 METADATA = dict(
-  name = 'heywatch-python',
+  name = 'heywatch',
   version = '1.0.0',
-  py_modules = ['heywatch'],
+  py_modules = ['heywatch.api'],
   author='Bruno Celeste',
   author_email='bruno@particle-s.com',
   description='A python wrapper around the HeyWatch API',
   license='MIT License',
   url='http://heywatch.com',
   keywords='heywatch api',
-	long_description=open('./README.md', 'r').read()
+	long_description="""Client Library for encoding Videos with HeyWatch
+
+HeyWatch is a Video Encoding Web Service.
+
+For a CLI, look at the ruby version: http://github.com/particles/heywatch-ruby
+
+For more information:
+
+* HeyWatch: http://heywatch.com
+* API Documentation: http://dev.heywatch.com
+* Twitter: @particles / @sadikzzz"""
 )
 
 def Main():
