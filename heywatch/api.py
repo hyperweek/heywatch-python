@@ -95,13 +95,15 @@ class API:
 		""" Update an object by giving its resource and ID
 		    hw.update('format', 9877, video_bitrate=890)
 		"""
-		return self.request('/' + resource + '/' + str(id), 'PUT', body=urllib.urlencode(data))
+		self.request('/' + resource + '/' + str(id), 'PUT', body=urllib.urlencode(data))
+		return True
 		
 	def delete(self, resource, id):
 		""" Delete a resource
 		    hw.delete('format', 9807)
 		"""
-		return self.request('/' + resource + '/' + str(id), 'DELETE')
+		self.request('/' + resource + '/' + str(id), 'DELETE')
+		return True
 		
 	def request(self, resource, method='GET', **args):
 		params = {'headers':self.headers}

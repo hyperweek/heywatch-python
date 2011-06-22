@@ -3,7 +3,7 @@ import sys, os
 
 METADATA = dict(
   name = 'heywatch',
-  version = '1.0.0',
+  version = '1.0.1',
   py_modules = ['heywatch.api'],
   author='Bruno Celeste',
   author_email='bruno@particle-s.com',
@@ -21,7 +21,14 @@ For more information:
 
 * HeyWatch: http://heywatch.com
 * API Documentation: http://dev.heywatch.com
-* Twitter: @particles / @sadikzzz"""
+* Twitter: @particles / @sadikzzz
+
+Changelogs
+
+1.0.1
+Return True instead of '' in update and delete method
+
+"""
 )
 
 def Main():
