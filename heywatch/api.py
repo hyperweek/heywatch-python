@@ -12,17 +12,20 @@ class BadRequest(Exception):
         return repr(self.value)
 
 
-class API:
-    def __init__(self, username, password):
+class API(object):
+    def __init__(self, username, password, **kwargs):
         """ Authenticate with your HeyWatch credentials
             hw = heywatch.API(user, passwd)
+
+            kwargs are any valid arguments passed to httplib2.Http contructor
         """
         self.url = 'https://heywatch.com'
-        self.cli = httplib2.Http()
+        self.cli = httplib2.Http(**kwargs)
         self.cli.add_credentials(username, password)
 
-        self.headers = {'Accept': 'application/json',
-         'User-Agent': 'HeyWatch py/1.0.0'
+        self.headers = {
+            'Accept': 'application/json',
+            'User-Agent': 'HeyWatch py/1.0.1',
         }
 
         self.account()
